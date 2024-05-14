@@ -67,7 +67,7 @@ public class ContactDatabase extends AbstractDatabase {
 
             //System.out.println(dormy);
            
-            String sql = "SELECT * FROM student WHERE student_dorm = ?";
+            String sql = "SELECT * FROM student WHERE student_dorm = ? ORDER BY name ASC";
             PreparedStatement pStatement = this.getConnection().prepareStatement(sql);
             pStatement.setString(1, dormy);
             ResultSet dorm = pStatement.executeQuery();
