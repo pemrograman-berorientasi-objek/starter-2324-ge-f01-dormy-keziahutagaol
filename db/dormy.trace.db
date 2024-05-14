@@ -1,0 +1,142 @@
+2024-05-14 13:48:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name TEXT NOT NULL,[*]year TEXT NOT NULL,gender TEXT NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name TEXT NOT NULL,year TEXT NOT NULL,gender TEXT NOT NULL) [42001-212]
+2024-05-14 13:51:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name VARCHAR(255) NOT NULL,[*]year VARCHAR(255) NOT NULL,gender VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name VARCHAR(255) NOT NULL,year VARCHAR(255) NOT NULL,gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 13:54:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE [*]student (id VARCHAR(255) NOT NULL PRIMARY KEY,name VARCHAR(255) NOT NULL,year VARCHAR(255) NOT NULL,gender VARCHAR(255) NOT NULL)"; expected "OR, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL, GLOBAL, TEMP, TEMPORARY, TABLE, SYNONYM, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+CREATE student (id VARCHAR(255) NOT NULL PRIMARY KEY,name VARCHAR(255) NOT NULL,year VARCHAR(255) NOT NULL,gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 13:54:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE student (id VARCHAR(255) NOT NULL PRIMARY KEY,name VARCHAR(255) NOT NULL,[*]year VARCHAR(255) NOT NULL,gender VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE student (id VARCHAR(255) NOT NULL PRIMARY KEY,name VARCHAR(255) NOT NULL,year VARCHAR(255) NOT NULL,gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 13:58:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name TEXT NOT NULL,[*]year INT NOT NULL,gender VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name TEXT NOT NULL,year INT NOT NULL,gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 14:05:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name TEXT NOT NULL,[*]year INT NOT NULL,gender VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY,name TEXT NOT NULL,year INT NOT NULL,gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 14:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS course_opening (course VARCHAR(255) NOT NULL,[*]year VARCHAR(255) NOT NULL,semester VARCHAR(255) NOT NULL,IE VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS course_opening (course VARCHAR(255) NOT NULL,year VARCHAR(255) NOT NULL,semester VARCHAR(255) NOT NULL,IE VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 14:10:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY, name TEXT NOT NULL, [*]year INT NOT NULL, gender VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY, name TEXT NOT NULL, year INT NOT NULL, gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 14:12:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY, name TEXT NOT NULL, [*]year INT NOT NULL, gender VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) NOT NULL PRIMARY KEY, name TEXT NOT NULL, year INT NOT NULL, gender VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 14:13:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) PRIMARY KEY, name TEXT, [*]year INT, gender VARCHAR(255))"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS student (id VARCHAR(255) PRIMARY KEY, name TEXT, year INT, gender VARCHAR(255)) [42001-212]
+2024-05-14 14:13:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS course_opening (course VARCHAR(255) NOT NULL,[*]year VARCHAR(255) NOT NULL,semester VARCHAR(255) NOT NULL,IE VARCHAR(255) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE IF NOT EXISTS course_opening (course VARCHAR(255) NOT NULL,year VARCHAR(255) NOT NULL,semester VARCHAR(255) NOT NULL,IE VARCHAR(255) NOT NULL) [42001-212]
+2024-05-14 14:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSE" not found; SQL statement:
+INSERT INTO course (id, name, student_year, gender) VALUES (?, ?, ?, ?) [42102-212]
+2024-05-14 14:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSE" not found; SQL statement:
+INSERT INTO course (id, name, student_year, gender) VALUES (?, ?, ?, ?) [42102-212]
+2024-05-14 14:21:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "COURSE" not found; SQL statement:
+INSERT INTO course (id, name, student_year, gender) VALUES (?, ?, ?, ?) [42102-212]
+2024-05-14 14:37:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DORM" not found; SQL statement:
+INSERT INTO dorm (name, dorm_capacity, dorm_gender) VALUES (?, ?, ?) [42102-212]
+2024-05-14 14:37:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DORM" not found; SQL statement:
+INSERT INTO dorm (name, dorm_capacity, dorm_gender) VALUES (?, ?, ?) [42102-212]
+2024-05-14 15:08:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DORM" not found; SQL statement:
+UPDATE student SET dorm = ? WHERE id = ? [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:754)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1092)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1159)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1128)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at pbo.f01.model.ContactDatabase.AssignDorm(ContactDatabase.java:91)
+	at pbo.f01.driver.Driver1.main(Driver1.java:57)
+2024-05-14 15:10:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "DORM" not found; SQL statement:
+UPDATE student SET dorm = ? WHERE id = ? [42122-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:754)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1092)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1159)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1128)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:691)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:568)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at pbo.f01.model.ContactDatabase.AssignDorm(ContactDatabase.java:91)
+	at pbo.f01.driver.Driver1.main(Driver1.java:57)
+2024-05-14 15:18:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1395)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:378)
+	at pbo.f01.model.ContactDatabase.printAll(ContactDatabase.java:69)
+	at pbo.f01.driver.Driver1.main(Driver1.java:61)
+2024-05-14 15:19:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Invalid value "1" for parameter "parameterIndex" [90008-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1395)
+	at org.h2.jdbc.JdbcPreparedStatement.setString(JdbcPreparedStatement.java:378)
+	at pbo.f01.model.ContactDatabase.printAll(ContactDatabase.java:69)
+	at pbo.f01.driver.Driver1.main(Driver1.java:61)
+2024-05-14 15:20:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "CHARACTER LARGE OBJECT to INTEGER" [22018-212]
+2024-05-14 15:24:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#1" is not set; SQL statement:
+UPDATE student SET student_dorm = ? WHERE id = ? [90012-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:186)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:255)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:128)
+	at pbo.f01.model.ContactDatabase.AssignDorm(ContactDatabase.java:100)
+	at pbo.f01.driver.Driver1.main(Driver1.java:57)
+2024-05-14 16:07:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#1" is not set; SQL statement:
+SELECT * FROM dorm where name = ? [90012-212]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:75)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:186)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:255)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:99)
+	at pbo.f01.model.ContactDatabase.AssignDorm(ContactDatabase.java:119)
+	at pbo.f01.driver.Driver1.main(Driver1.java:58)
