@@ -66,7 +66,7 @@ public class Driver1 {
             //paling bawah
             database.shutdown();
         } catch (SQLException sqle) {
-            System.out.println(sqle.getMessage());
+            //System.out.println(sqle.getMessage());
         }
 
         

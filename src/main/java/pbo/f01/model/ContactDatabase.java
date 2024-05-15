@@ -103,14 +103,49 @@ public class ContactDatabase extends AbstractDatabase {
             total++;
         }
 
+        dormed.close();
+        pStatement.close();
+
         return total;
     }
+
+    public String CekGender(String dorm) throws SQLException{
+
+        
+        System.out.println(dorm);
+        String sql = "SELECT * FROM dorm WHERE name = ?";
+        PreparedStatement pStatement = this.getConnection().prepareStatement(sql);
+        pStatement.setString(1, dorm);
+        ResultSet dormed= pStatement.executeQuery();
+
+            //String gender = dormed.getString("dorm_gender");
+
+        //}
+
+
+        return dormed.getString("dorm_gender");
+
+    }
+
+    
 
 
     //PRINT ALL ENROLLMENT
     public void AssignDorm(String id, String dorm) throws SQLException {
+        String gender = "";
 
-        String sql = "UPDATE student SET student_dorm = ? WHERE id = ?";
+        String sqldorm = "SELECT * FROM dorm WHERE name = ?";
+        PreparedStatement statementgdorm = this.getConnection().prepareStatement(sqldorm);
+        statementgdorm.setString(1, dorm);
+        ResultSet dormed= statementgdorm.executeQuery();
+
+        while (dormed.next()){
+            gender = dormed.getString("dorm_gender");
+        }
+
+        //String cekgender = CekGender(dorm);
+
+        String sql = "UPDATE student SET student_dorm = ? WHERE id = ? AND gender = ?";
         PreparedStatement pStatement = this.getConnection().prepareStatement(sql);
 
         //ResultSet student = pStatement.executeQuery();
@@ -123,13 +158,20 @@ public class ContactDatabase extends AbstractDatabase {
 
         // Integer capacity = ((ResultSet) statement).getInt("dorm_capacity");
 
-        // Integer maxcapa = this.Countcapacity(dorm);
+        Integer maxcapa = this.Countcapacity(dorm);
 
-        //if ( maxcapa <= capacity){
+        if ( maxcapa < 5){
+
+        
             pStatement.setString(1, dorm);
             pStatement.setString(2, id);
+            pStatement.setString(3, gender);
         //}
-
+        } else{
+            pStatement.setString(1, "None");
+            pStatement.setString(2, id);
+            pStatement.setString(3, gender);
+        }
         pStatement.executeUpdate();
 
         pStatement.close();
